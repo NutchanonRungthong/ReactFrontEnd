@@ -1,5 +1,6 @@
 
 import Hello from "./assets/Hello";
+import Counter from "./assets/Counter";
 import Contact from "./assets/Contact";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
   ];
   return (
     <div className="App">
+      <Counter />
       {helloData.map((data, index) => (
         <Hello key={index} name={data.name} message={data.message} />
       ))}
